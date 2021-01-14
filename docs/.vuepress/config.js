@@ -14,6 +14,7 @@ module.exports = {
                  'windows'
              ]
         },
-        smoothScroll: true
+        smoothScroll: true,
+        plugins: ['@vuepress/last-updated']
     }
 }
