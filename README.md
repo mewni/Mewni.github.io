@@ -1,25 +1,25 @@
----
-home: true
-heroText: Mewni's Blog
-tagline: A simple and beautiful vuepress blog theme.
-# heroImage: /hero.png
-# heroImageStyle: {
-#   maxWidth: '600px',
-#   width: '100%',
-#   display: block,
-#   margin: '9rem auto 2rem',
-#   background: '#fff',
-#   borderRadius: '1rem',
-# }
-bgImageStyle: { height: "450px" }
-isShowTitleInHome: false
-actionText: Guide
-actionLink: /views/other/guide
-features:
-  - title: Yesterday
-    details: 开发一款看着开心、写着顺手的 vuepress 博客主题
-  - title: Today
-    details: 希望帮助更多的人花更多的时间在内容创作上，而不是博客搭建上
-  - title: Tomorrow
-    details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
----
+# nuxt-content-article
+
+The [content module](https://content.nuxtjs.org/) is a git files based headless CMS that provides powerful features when it comes to write blogs, documentation sites or just adding content to any regular website. In this post we will go through most of the benefits of this module and discover how we can create a blog with it.
+
+For detailed explanation on how to create this blog, check out [the tutorial](https://nuxtjs.org/blog/creating-blog-with-nuxt-content).
+
+Click here to view the [demo](https://blog-with-nuxt-content.netlify.app/)
+
+![demo of blog](https://res.cloudinary.com/nuxt/video/upload/v1588091670/demo-blog-content_shk6kw.jpg)
+
+## Build Setup
+
+```bash
+# install dependencies
+$ yarn
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# generate static project
+$ yarn generate
+
+# view a production version of your app
+$ yarn start
+```
