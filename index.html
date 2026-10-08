@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mewni Alahakoon — Security Researcher</title>
+<meta name="description" content="Mewni Alahakoon, security researcher in Colombo, Sri Lanka, working on contactless (NFC/EMV) payment security, peripheral and operating-system security (USB, USB-C, Thunderbolt), and embedded and IoT security.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232B3BE6'/%3E%3Ctext x='16' y='21.5' font-family='monospace' font-size='13' font-weight='700' fill='white' text-anchor='middle'%3EMA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0E1116}
+a{color:#0E1116}
+a:hover{color:#0E1116}
+a:focus-visible{outline:2px solid #0E1116;outline-offset:3px}
+.on-dark a:focus-visible{outline-color:#FFFFFF}
+.btn{transition:transform .16s ease,filter .16s ease}
+.btn:hover{transform:translateY(-1px);filter:brightness(.9)}
+.ul{transition:text-decoration-thickness .16s ease}
+.ul:hover{text-decoration-thickness:2px !important}
+.nl:hover{text-decoration-line:underline !important;text-underline-offset:6px}
+.dash li+li{margin-top:8px}
+.dash li::marker{color:#9AA1AC}
+@keyframes sweep{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.anim{animation:none !important}.btn,.ul{transition:none}}
+</style>
+</head>
+<body>
+<div id="top" style="background: #F6F7F9; color: #0E1116; font-family: 'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased">
+
+<div style="height: 4px; background: #2B3BE6"></div>
+
+<header style="border-bottom: 1px solid #DADDE3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 32px">
+<a href="#top" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #0E1116; text-decoration: none; font-size: 16px; font-weight: 700; letter-spacing: -0.01em">
+<span aria-hidden="true" style="display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; background: #2B3BE6; color: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.02em">MA</span>
+<span>Mewni Alahakoon</span>
+</a>
+<nav aria-label="Sections" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px; font-size: 15px">
+<a class="nl" href="#research" style="display: inline-flex; align-items: center; min-height: 44px; color: #3D4450; text-decoration: none">Research</a>
+<a class="nl" href="#publications" style="display: inline-flex; align-items: center; min-height: 44px; color: #3D4450; text-decoration: none">Publications</a>
+<a class="nl" href="#experience" style="display: inline-flex; align-items: center; min-height: 44px; color: #3D4450; text-decoration: none">Experience</a>
+<a class="nl" href="#education" style="display: inline-flex; align-items: center; min-height: 44px; color: #3D4450; text-decoration: none">Education</a>
+<a class="nl" href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; color: #3D4450; text-decoration: none">Contact</a>
+<a class="btn" href="Mewni_Alahakoon_CV.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid #0E1116; color: #0E1116; text-decoration: none; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 600">CV <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 2v7.5M3.8 6.6 7 9.8l3.2-3.2M2.5 12h9"></path></svg></a>
+</nav>
+</div>
+</header>
+
+<section aria-labelledby="name" style="background-color: #F6F7F9; background-image: radial-gradient(#D3D8DF 1px, transparent 1.3px); background-size: 22px 22px; background-position: 10px 10px">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 96px) clamp(20px, 5vw, 56px) clamp(48px, 6vw, 72px)">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #3D4450">
+<span aria-hidden="true" style="width: 8px; height: 8px; background: #2B3BE6"></span>
+<span>Hardware &amp; wireless security</span>
+<span aria-hidden="true" style="color: #9AA1AC">/</span>
+<span>Colombo, Sri&nbsp;Lanka</span>
+</p>
+<h1 id="name" style="margin: 22px 0 0; font-size: clamp(52px, 8.6vw, 120px); line-height: 0.94; font-weight: 700; letter-spacing: -0.045em; font-stretch: 106%; text-wrap: balance">Mewni Alahakoon</h1>
+<p style="margin: 30px 0 0; max-width: 780px; font-size: clamp(19px, 1.8vw, 23px); line-height: 1.5; color: #3D4450; text-wrap: pretty">I study how everyday hardware — contactless payment cards, USB and Thunderbolt peripherals — can be attacked, and how to measure and defend against those attacks. My interests also extend to zero-day vulnerability and exploit ecosystems, social engineering and cyberwarfare.</p>
+<p style="margin: 18px 0 0; max-width: 780px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; font-size: 16px; line-height: 1.55; color: #5B6370">
+<span style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2B3BE6">Now</span>
+<span>Independent research on USB and peripheral-interface security, in collaboration with Dr.&nbsp;Asanka&nbsp;P.&nbsp;Sayakkara (UCSC, University of Colombo).</span>
+</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="mailto:mewnialahakoon@gmail.com" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background: #2B3BE6; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 600">Email me <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7h9M8 3.5 11.5 7 8 10.5"></path></svg></a>
+<a class="btn" href="Mewni_Alahakoon_CV.pdf" download="Mewni_Alahakoon_CV.pdf" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background: #FFFFFF; border: 1px solid #0E1116; color: #0E1116; text-decoration: none; font-size: 16px; font-weight: 600">Download CV <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 2v7.5M3.8 6.6 7 9.8l3.2-3.2M2.5 12h9"></path></svg></a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0 22px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500">
+<a class="ul" href="https://scholar.google.com/citations?user=hw3FBgYAAAAJ" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #0E1116; text-decoration: underline; text-decoration-color: #2B3BE6; text-decoration-thickness: 1px; text-underline-offset: 5px">Google Scholar <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+<a class="ul" href="https://orcid.org/0009-0006-4055-3090" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #0E1116; text-decoration: underline; text-decoration-color: #2B3BE6; text-decoration-thickness: 1px; text-underline-offset: 5px">ORCID <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+<a class="ul" href="https://github.com/mewni" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #0E1116; text-decoration: underline; text-decoration-color: #2B3BE6; text-decoration-thickness: 1px; text-underline-offset: 5px">GitHub <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+<a class="ul" href="https://www.linkedin.com/in/mewni-a-0a7a48192/" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #0E1116; text-decoration: underline; text-decoration-color: #2B3BE6; text-decoration-thickness: 1px; text-underline-offset: 5px">LinkedIn <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+</div>
+</div>
+<figure style="margin: clamp(48px, 6vw, 72px) 0 0; padding: 0">
+<div class="anim" style="height: 120px; overflow: hidden; border-top: 1px solid #DADDE3; border-bottom: 1px solid #DADDE3; animation: sweep 1.8s cubic-bezier(.2,.7,.2,1) .25s both">
+<svg viewBox="0 0 1600 120" preserveAspectRatio="xMinYMid slice" width="100%" height="120" aria-hidden="true" style="display: block">
+<path d="M0 60H1600" fill="none" stroke="#C9CED6" stroke-width="1" stroke-dasharray="2 4"></path>
+<path d="M0 60Q3 -32 6 60Q9 152 12 60Q15 -32 18 60Q21 152 24 60Q27 -32 30 60Q33 152 36 60Q39 -32 42 60Q45 152 48 60Q51 -32 54 60Q57 152 60 60Q63 -32 66 60Q69 152 72 60Q75 -32 78 60Q81 152 84 60Q87 -32 90 60Q93 152 96 60Q99 -32 102 60Q105 94.8 108 60Q111 55.4 114 60Q117 64.6 120 60Q123 55.4 126 60Q129 72.9 132 60Q135 -23.7 138 60Q141 152 144 60Q147 -32 150 60Q153 152 156 60Q159 -32 162 60Q165 152 168 60Q171 -32 174 60Q177 94.8 180 60Q183 55.4 186 60Q189 64.6 192 60Q195 55.4 198 60Q201 72.9 204 60Q207 -23.7 210 60Q213 152 216 60Q219 -32 222 60Q225 94.8 228 60Q231 55.4 234 60Q237 64.6 240 60Q243 55.4 246 60Q249 72.9 252 60Q255 -23.7 258 60Q261 152 264 60Q267 -32 270 60Q273 152 276 60Q279 -32 282 60Q285 152 288 60Q291 -32 294 60Q297 152 300 60Q303 -32 306 60Q309 152 312 60Q315 -32 318 60Q321 94.8 324 60Q327 55.4 330 60Q333 64.6 336 60Q339 55.4 342 60Q345 72.9 348 60Q351 -23.7 354 60Q357 152 360 60Q363 -32 366 60Q369 152 372 60Q375 -32 378 60Q381 152 384 60Q387 -32 390 60Q393 94.8 396 60Q399 55.4 402 60Q405 64.6 408 60Q411 55.4 414 60Q417 72.9 420 60Q423 -23.7 426 60Q429 152 432 60Q435 -32 438 60Q441 94.8 444 60Q447 55.4 450 60Q453 64.6 456 60Q459 55.4 462 60Q465 72.9 468 60Q471 -23.7 474 60Q477 152 480 60Q483 -32 486 60Q489 152 492 60Q495 -32 498 60Q501 152 504 60Q507 -32 510 60Q513 94.8 516 60Q519 55.4 522 60Q525 64.6 528 60Q531 55.4 534 60Q537 72.9 540 60Q543 -23.7 546 60Q549 152 552 60Q555 -32 558 60Q561 152 564 60Q567 -32 570 60Q573 152 576 60Q579 -32 582 60Q585 152 588 60Q591 -32 594 60Q597 152 600 60Q603 -32 606 60Q609 152 612 60Q615 -32 618 60Q621 152 624 60Q627 -32 630 60Q633 152 636 60Q639 -32 642 60Q645 152 648 60Q651 -32 654 60Q657 152 660 60Q663 -32 666 60Q669 152 672 60Q675 -32 678 60Q681 152 684 60Q687 -32 690 60Q693 152 696 60Q699 -32 702 60Q705 152 708 60Q711 -32 714 60Q717 152 720 60Q723 -5.3 726 60Q729 120.7 732 60Q735 -0.7 738 60Q741 120.7 744 60Q747 -0.7 750 60Q753 120.7 756 60Q759 -0.7 762 60Q765 120.7 768 60Q771 -0.7 774 60Q777 152 780 60Q783 -32 786 60Q789 152 792 60Q795 -5.3 798 60Q801 120.7 804 60Q807 -0.7 810 60Q813 120.7 816 60Q819 -0.7 822 60Q825 120.7 828 60Q831 -0.7 834 60Q837 120.7 840 60Q843 -0.7 846 60Q849 152 852 60Q855 -32 858 60Q861 152 864 60Q867 -32 870 60Q873 152 876 60Q879 -32 882 60Q885 152 888 60Q891 -5.3 894 60Q897 120.7 900 60Q903 -0.7 906 60Q909 120.7 912 60Q915 -0.7 918 60Q921 152 924 60Q927 -32 930 60Q933 152 936 60Q939 -5.3 942 60Q945 120.7 948 60Q951 -0.7 954 60Q957 120.7 960 60Q963 -0.7 966 60Q969 120.7 972 60Q975 -0.7 978 60Q981 120.7 984 60Q987 -0.7 990 60Q993 152 996 60Q999 -32 1002 60Q1005 152 1008 60Q1011 -32 1014 60Q1017 152 1020 60Q1023 -32 1026 60Q1029 152 1032 60Q1035 -5.3 1038 60Q1041 120.7 1044 60Q1047 -0.7 1050 60Q1053 120.7 1056 60Q1059 -0.7 1062 60Q1065 152 1068 60Q1071 -32 1074 60Q1077 152 1080 60Q1083 -5.3 1086 60Q1089 120.7 1092 60Q1095 -0.7 1098 60Q1101 120.7 1104 60Q1107 -0.7 1110 60Q1113 120.7 1116 60Q1119 -0.7 1122 60Q1125 120.7 1128 60Q1131 -0.7 1134 60Q1137 152 1140 60Q1143 -32 1146 60Q1149 152 1152 60Q1155 -32 1158 60Q1161 152 1164 60Q1167 -32 1170 60Q1173 152 1176 60Q1179 -32 1182 60Q1185 152 1188 60Q1191 -32 1194 60Q1197 152 1200 60Q1203 -32 1206 60Q1209 152 1212 60Q1215 -32 1218 60Q1221 121.8 1224 60Q1227 55.4 1230 60Q1233 64.6 1236 60Q1239 55.4 1242 60Q1245 64.6 1248 60Q1251 -1.8 1254 60Q1257 152 1260 60Q1263 -32 1266 60Q1269 152 1272 60Q1275 -32 1278 60Q1281 152 1284 60Q1287 -32 1290 60Q1293 121.8 1296 60Q1299 55.4 1302 60Q1305 64.6 1308 60Q1311 55.4 1314 60Q1317 64.6 1320 60Q1323 -1.8 1326 60Q1329 152 1332 60Q1335 -32 1338 60Q1341 152 1344 60Q1347 -32 1350 60Q1353 152 1356 60Q1359 -32 1362 60Q1365 121.8 1368 60Q1371 55.4 1374 60Q1377 64.6 1380 60Q1383 55.4 1386 60Q1389 64.6 1392 60Q1395 -1.8 1398 60Q1401 152 1404 60Q1407 -32 1410 60Q1413 152 1416 60Q1419 -32 1422 60Q1425 152 1428 60Q1431 -32 1434 60Q1437 121.8 1440 60Q1443 55.4 1446 60Q1449 64.6 1452 60Q1455 55.4 1458 60Q1461 64.6 1464 60Q1467 -1.8 1470 60Q1473 152 1476 60Q1479 -32 1482 60Q1485 152 1488 60Q1491 -32 1494 60Q1497 152 1500 60Q1503 -32 1506 60Q1509 152 1512 60Q1515 -32 1518 60Q1521 152 1524 60Q1527 -32 1530 60Q1533 152 1536 60Q1539 -32 1542 60Q1545 152 1548 60Q1551 -32 1554 60Q1557 152 1560 60Q1563 -32 1566 60Q1569 152 1572 60Q1575 -32 1578 60Q1581 152 1584 60Q1587 -32 1590 60Q1593 152 1596 60" fill="none" stroke="#2B3BE6" stroke-width="1.4" stroke-linejoin="round"></path>
+</svg>
+</div>
+<figcaption style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 24px; padding-top: 12px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; line-height: 1.5; color: #5B6370">
+<span>Fig. 0 — 13.56 MHz NFC carrier: reader pauses, then card load modulation (stylised)</span>
+<span>ISO/IEC 14443</span>
+</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="research" aria-labelledby="research-title" style="border-top: 1px solid #DADDE3">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 28px 64px">
+<div style="flex: 0 0 240px; max-width: 100%">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #2B3BE6">01</p>
+<h2 id="research-title" style="margin: 10px 0 0; font-size: clamp(28px, 2.6vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; font-stretch: 104%">Research interests</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 44px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+<div style="grid-row: span 2; background: #FFFFFF; border: 1px solid #DADDE3; padding: 26px 28px 18px">
+<h3 style="margin: 0 0 12px; font-size: 21px; line-height: 1.25; font-weight: 700; letter-spacing: -0.02em">Payment security</h3>
+<ul style="margin: 0; padding: 0; list-style: none; font-size: 16px; line-height: 1.5; color: #3D4450">
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Contactless (NFC/EMV) payment security</li>
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">EMV card security testing</li>
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Relay attacks</li>
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Long-range radio interception</li>
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Online payment and payment-API security</li>
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Payment-ecosystem security</li>
+</ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DADDE3; padding: 26px 28px 18px">
+<h3 style="margin: 0 0 12px; font-size: 21px; line-height: 1.25; font-weight: 700; letter-spacing: -0.02em">Peripherals &amp; embedded</h3>
+<ul style="margin: 0; padding: 0; list-style: none; font-size: 16px; line-height: 1.5; color: #3D4450">
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Peripheral and operating-system security (USB, USB-C, Thunderbolt)</li>
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Embedded and IoT security</li>
+</ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DADDE3; padding: 26px 28px 18px">
+<h3 style="margin: 0 0 12px; font-size: 21px; line-height: 1.25; font-weight: 700; letter-spacing: -0.02em">Methods</h3>
+<ul style="margin: 0; padding: 0; list-style: none; font-size: 16px; line-height: 1.5; color: #3D4450">
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Experimental security evaluation with SDR</li>
+<li style="padding: 10px 0; border-top: 1px solid #E8EAEE">Threat modelling</li>
+</ul>
+</div>
+</div>
+<div>
+<h3 style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.5; color: #5B6370">Broader interests</h3>
+<ul style="margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px">
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Penetration testing</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Network security</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Web application security</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Mobile security</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Malware analysis</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Reverse engineering</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Vulnerability research</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Threat intelligence</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Incident response</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>ICS/SCADA security</li>
+<li style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 15px; background: #FFFFFF; border: 1px solid #DADDE3; font-size: 15px; font-weight: 500; line-height: 1.3; color: #0E1116"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; background: #2B3BE6"></span>Applied cryptography</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="on-dark" aria-labelledby="featured-title" style="background: #2B3BE6; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(20px, 5vw, 56px)">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #FFFFFF">
+<span>Featured paper</span>
+<span aria-hidden="true" style="opacity: 0.6">/</span>
+<span>Springer CCIS</span>
+<span aria-hidden="true" style="opacity: 0.6">/</span>
+<span>ICTer 2025</span>
+</p>
+<h2 id="featured-title" style="margin: 20px 0 0; max-width: 960px; font-size: clamp(30px, 3.8vw, 50px); line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; font-stretch: 104%; text-wrap: balance">Smart Card Vulnerabilities in Sri&nbsp;Lanka: A Security Assessment Across Service Providers</h2>
+<p style="margin: 24px 0 0; max-width: 760px; font-size: 19px; line-height: 1.55; color: #FFFFFF; text-wrap: pretty">The first systematic, cross-provider security assessment of NFC payment cards issued in Sri&nbsp;Lanka. The principal risk lay not in card cryptography but in the wider payment ecosystem: card data exposed over NFC could be misused where online merchants apply incomplete validation.</p>
+<div style="margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(255, 255, 255, 0.35); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 28px 40px">
+<div>
+<p style="margin: 0; font-size: clamp(44px, 4.6vw, 64px); line-height: 1; font-weight: 700; letter-spacing: -0.04em; font-stretch: 104%">9</p>
+<p style="margin: 12px 0 0; max-width: 300px; font-size: 16px; line-height: 1.5; color: #FFFFFF">banks whose NFC payment cards were assessed</p>
+</div>
+<div>
+<p style="margin: 0; font-size: clamp(44px, 4.6vw, 64px); line-height: 1; font-weight: 700; letter-spacing: -0.04em; font-stretch: 104%">11</p>
+<p style="margin: 12px 0 0; max-width: 300px; font-size: 16px; line-height: 1.5; color: #FFFFFF">experimental scenarios in an original quantitative security-scoring model</p>
+</div>
+<div>
+<p style="margin: 0; font-size: clamp(44px, 4.6vw, 64px); line-height: 1; font-weight: 700; letter-spacing: -0.04em; font-stretch: 104%">13.56<span style="margin-left: 8px; font-size: 0.42em; letter-spacing: 0">MHz</span></p>
+<p style="margin: 12px 0 0; max-width: 300px; font-size: 16px; line-height: 1.5; color: #FFFFFF">data-extraction, jamming and replay experiments with Flipper Zero, HackRF One and GNU Radio</p>
+</div>
+</div>
+<div style="margin-top: 44px; display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="https://doi.org/10.1007/978-981-92-0137-2_31" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; background: #FFFFFF; color: #2B3BE6; text-decoration: none; font-size: 16px; font-weight: 600">Read the paper <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+</div>
+</div>
+</section>
+
+<section id="publications" aria-labelledby="pubs-title">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 28px 64px">
+<div style="flex: 0 0 240px; max-width: 100%">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #2B3BE6">02</p>
+<h2 id="pubs-title" style="margin: 10px 0 0; font-size: clamp(28px, 2.6vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; font-stretch: 104%">Publications</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0">
+<p style="margin: 0; padding: 24px 0 14px; border-top: 1px solid #DADDE3; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6370">Peer-reviewed</p>
+<article id="pub-1" style="display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 4px 16px; padding: 14px 0 28px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 15px; font-weight: 600; line-height: 1.8; color: #2B3BE6">[1]</p>
+<div style="min-width: 0">
+<h3 style="margin: 0; font-size: 20px; line-height: 1.35; font-weight: 650; letter-spacing: -0.01em; text-wrap: pretty">Smart Card Vulnerabilities in Sri&nbsp;Lanka: A Security Assessment Across Service Providers</h3>
+<p style="margin: 8px 0 0; font-size: 16px; line-height: 1.5; color: #3D4450"><strong style="font-weight: 650; color: #0E1116">M. Alahakoon</strong>, A. P. Sayakkara, B. Weerasinghe, and A. Wickramasekara</p>
+<p style="margin: 4px 0 0; font-size: 15px; line-height: 1.55; color: #5B6370">In Proceedings of the International Conference on Advances in ICT for Emerging Regions (ICTer 2025), Communications in Computer and Information Science (CCIS), Springer, 2026.</p>
+<div style="margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px">
+<a class="ul" href="https://doi.org/10.1007/978-981-92-0137-2_31" style="display: inline-flex; align-items: center; gap: 6px; min-height: 32px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; color: #0E1116; text-decoration: underline; text-decoration-color: #2B3BE6; text-decoration-thickness: 1px; text-underline-offset: 4px; overflow-wrap: anywhere">doi:10.1007/978-981-92-0137-2_31 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+</div>
+</div>
+</article>
+<article id="pub-2" style="display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 4px 16px; padding: 28px 0; border-top: 1px solid #DADDE3">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 15px; font-weight: 600; line-height: 1.8; color: #2B3BE6">[2]</p>
+<div style="min-width: 0">
+<h3 style="margin: 0; font-size: 20px; line-height: 1.35; font-weight: 650; letter-spacing: -0.01em; text-wrap: pretty">Weaponizing the Unknown: Zero-Day Exploits as Tools of Cyberwarfare and Their Impact on Global Security</h3>
+<p style="margin: 8px 0 0; font-size: 16px; line-height: 1.5; color: #3D4450"><strong style="font-weight: 650; color: #0E1116">M. Alahakoon</strong></p>
+<p style="margin: 4px 0 0; font-size: 15px; line-height: 1.55; color: #5B6370">BCIS Emerging Scholars Symposium (ESS 2025), Bandaranaike Centre for International Studies, Colombo, Sri&nbsp;Lanka.</p>
+<div style="margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px">
+<span style="display: inline-flex; align-items: center; padding: 3px 9px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; line-height: 1.4; color: #3D4450">Forthcoming</span>
+<span style="display: inline-flex; align-items: center; padding: 3px 9px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; line-height: 1.4; color: #3D4450">Presented at the symposium</span>
+</div>
+</div>
+</article>
+<p style="margin: 0; padding: 36px 0 14px; border-top: 1px solid #DADDE3; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6370">Work in progress</p>
+<article id="pub-3" style="display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 4px 16px; padding: 14px 0 28px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 15px; font-weight: 600; line-height: 1.8; color: #2B3BE6">[3]</p>
+<div style="min-width: 0">
+<h3 style="margin: 0; font-size: 20px; line-height: 1.35; font-weight: 650; letter-spacing: -0.01em; text-wrap: pretty">Systematic review of USB security: attacks, defences and open challenges</h3>
+<p style="margin: 8px 0 0; font-size: 16px; line-height: 1.5; color: #3D4450"><strong style="font-weight: 650; color: #0E1116">M. Alahakoon</strong> and A. P. Sayakkara</p>
+<p style="margin: 4px 0 0; font-size: 15px; line-height: 1.55; color: #5B6370">Literature review in progress; survey article planned.</p>
+<div style="margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px">
+<span style="display: inline-flex; align-items: center; padding: 3px 9px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; line-height: 1.4; color: #3D4450">In progress</span>
+</div>
+</div>
+</article>
+<div style="padding-top: 24px; border-top: 1px solid #DADDE3">
+<a class="ul" href="https://scholar.google.com/citations?user=hw3FBgYAAAAJ" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 16px; font-weight: 600; color: #0E1116; text-decoration: underline; text-decoration-color: #2B3BE6; text-decoration-thickness: 1px; text-underline-offset: 5px">All publications on Google Scholar <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="experience" aria-labelledby="exp-title" style="border-top: 1px solid #DADDE3">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 28px 64px">
+<div style="flex: 0 0 240px; max-width: 100%">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #2B3BE6">03</p>
+<h2 id="exp-title" style="margin: 10px 0 0; font-size: clamp(28px, 2.6vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; font-stretch: 104%">Research experience</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0">
+<article style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 30px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 132px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; line-height: 1.9; color: #5B6370">2026 – Present</p>
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2B3BE6">Independent Researcher</p>
+<h3 style="margin: 6px 0 0; font-size: 21px; line-height: 1.3; font-weight: 700; letter-spacing: -0.015em">USB and Peripheral-Interface Security</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">In collaboration with Dr.&nbsp;Asanka&nbsp;P.&nbsp;Sayakkara, UCSC, University of Colombo · Colombo,&nbsp;Sri&nbsp;Lanka</p>
+<ul class="dash" style="margin: 16px 0 0; padding-left: 20px; list-style-type: square; font-size: 16px; line-height: 1.6; color: #3D4450">
+<li>Conducting an ongoing systematic literature review of USB security <a href="#pub-3" style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 14px; font-weight: 600; color: #2B3BE6; text-decoration: none">[3]</a>, covering USB4, USB-C Power Delivery, Thunderbolt, and malicious cable implants.</li>
+<li>Developing an attack-layer × attacker-capability taxonomy that spans the physical to the application layer, and surveying host-side defences such as device authorisation, firmware signing and kernel DMA protection.</li>
+<li>Mapping open problems where attack classes remain unstudied or proposed defences lack independent evaluation.</li>
+</ul>
+</div>
+</article>
+<article id="exp-msc" style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 30px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 132px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; line-height: 1.9; color: #5B6370">2024 – 2025</p>
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2B3BE6">Postgraduate Researcher</p>
+<h3 style="margin: 6px 0 0; font-size: 21px; line-height: 1.3; font-weight: 700; letter-spacing: -0.015em">Master’s Thesis</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">UCSC, University of Colombo · Supervisor: Dr.&nbsp;Asanka&nbsp;P.&nbsp;Sayakkara · Colombo,&nbsp;Sri&nbsp;Lanka</p>
+<ul class="dash" style="margin: 16px 0 0; padding-left: 20px; list-style-type: square; font-size: 16px; line-height: 1.6; color: #3D4450">
+<li>Led the first systematic, cross-provider security assessment of NFC payment cards issued in Sri&nbsp;Lanka, covering cards from nine banks under a defined proximity-attacker threat model <a href="#pub-1" style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 14px; font-weight: 600; color: #2B3BE6; text-decoration: none">[1]</a>.</li>
+<li>Designed an original quantitative security-scoring model combining read success, read latency, distance resistance and wallet-shielding resistance across 11 experimental scenarios.</li>
+<li>Ran data-extraction (Flipper Zero), jamming (nine cards) and replay (five cards) experiments at 13.56 MHz with HackRF One and GNU Radio; jamming was defeated by EMV anti-collision and signal modulation, while replay was limited by SDR frequency drift.</li>
+<li>Showed that the principal risk lay in the wider payment ecosystem rather than in card cryptography: card data exposed over NFC could be misused where online merchants apply incomplete validation.</li>
+</ul>
+</div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 30px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 132px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; line-height: 1.9; color: #5B6370">2025</p>
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2B3BE6">Postgraduate Researcher</p>
+<h3 style="margin: 6px 0 0; font-size: 21px; line-height: 1.3; font-weight: 700; letter-spacing: -0.015em">Zero-Day Exploits in Cyberwarfare</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">UCSC, University of Colombo · Sole-authored study <a href="#pub-2" style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 14px; font-weight: 600; color: #2B3BE6; text-decoration: none">[2]</a> · Colombo,&nbsp;Sri&nbsp;Lanka</p>
+<ul class="dash" style="margin: 16px 0 0; padding-left: 20px; list-style-type: square; font-size: 16px; line-height: 1.6; color: #3D4450">
+<li>Conducted a qualitative comparative case study of Stuxnet, WannaCry and Pegasus, using thematic coding of state motives, offence–defence imbalance and security impact.</li>
+<li>Showed how stockpiling and the exploit market create an offence–defence asymmetry; assessed governance gaps against the U.S. Vulnerabilities Equities Process and the Tallinn Manual 2.0.</li>
+</ul>
+</div>
+</article>
+<article style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 30px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 132px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; line-height: 1.9; color: #5B6370">2021 – 2022</p>
+<div style="flex: 1 1 420px; min-width: 0">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2B3BE6">Undergraduate Researcher</p>
+<h3 style="margin: 6px 0 0; font-size: 21px; line-height: 1.3; font-weight: 700; letter-spacing: -0.015em">BSc Thesis</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">University of Plymouth (delivered at NSBM Green University) · Supervisor:&nbsp;Mr.&nbsp;Chamindra&nbsp;Attanayake · Homagama, Sri&nbsp;Lanka</p>
+<ul class="dash" style="margin: 16px 0 0; padding-left: 20px; list-style-type: square; font-size: 16px; line-height: 1.6; color: #3D4450">
+<li>Designed a real-time, multi-stage detection architecture for zero-day ransomware on Windows, combining pre-execution static analysis of downloaded executables with behavioural monitoring of file, directory and registry activity.</li>
+<li>Implemented the static-analysis stage as a two-model pipeline: a random-forest classifier over PE-file features and a convolutional neural network trained on 9,639 malware images from 25 families (Microsoft malware dataset).</li>
+<li>Deployed both models as a FastAPI service (Python, scikit-learn, TensorFlow/Keras).</li>
+</ul>
+</div>
+</article>
+<p style="margin: 0; padding: 36px 0 6px; border-top: 1px solid #DADDE3; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #5B6370">Other research activities</p>
+<article style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 18px 0 0">
+<p style="flex: 0 0 132px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; line-height: 1.9; color: #5B6370">2020 – 2021</p>
+<div style="flex: 1 1 420px; min-width: 0">
+<h3 style="margin: 0; font-size: 18px; line-height: 1.4; font-weight: 700; letter-spacing: -0.01em">Student Volunteer Researcher, Conex Research</h3>
+<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">International, UK-based student research organisation · Remote</p>
+<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: #3D4450">Contributed to space-mission proposals through background research, Python scripting, and mission analysis in NASA’s GMAT.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section id="education" aria-labelledby="edu-title" style="border-top: 1px solid #DADDE3">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 28px 64px">
+<div style="flex: 0 0 240px; max-width: 100%">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #2B3BE6">04</p>
+<h2 id="edu-title" style="margin: 10px 0 0; font-size: clamp(28px, 2.6vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; font-stretch: 104%">Education</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 16px">
+<article style="background: #FFFFFF; border: 1px solid #DADDE3; padding: clamp(22px, 2.4vw, 32px)">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; color: #5B6370">2023 – 2025</p>
+<h3 style="margin: 10px 0 0; font-size: 22px; line-height: 1.25; font-weight: 700; letter-spacing: -0.02em">Master of Information Security (MIS)</h3>
+<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.5; color: #3D4450">University of Colombo School of Computing (UCSC), University of Colombo</p>
+<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">Colombo, Sri&nbsp;Lanka</p>
+<dl style="margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #E8EAEE; display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px 16px; font-size: 15px; line-height: 1.5">
+<dt style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.9; color: #5B6370">Thesis</dt>
+<dd style="margin: 0; color: #0E1116">Smart Card Vulnerabilities in Sri&nbsp;Lanka: A Security Assessment Across Service Providers. Published in Springer CCIS <a href="#pub-1" style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 600; color: #2B3BE6; text-decoration: none">[1]</a>.</dd>
+<dt style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.9; color: #5B6370">Supervisor</dt>
+<dd style="margin: 0; color: #0E1116">Dr.&nbsp;Asanka&nbsp;P.&nbsp;Sayakkara</dd>
+</dl>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #DADDE3; padding: clamp(22px, 2.4vw, 32px)">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; color: #5B6370">2019 – 2022</p>
+<h3 style="margin: 10px 0 0; font-size: 22px; line-height: 1.25; font-weight: 700; letter-spacing: -0.02em">BSc (Hons) Computer Security</h3>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.5; font-weight: 600; color: #0E1116">Upper Second-Class Honours (2:1)</p>
+<p style="margin: 10px 0 0; font-size: 16px; line-height: 1.5; color: #3D4450">University of Plymouth (delivered at NSBM Green University, Sri&nbsp;Lanka)</p>
+<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">United Kingdom</p>
+<dl style="margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #E8EAEE; display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px 16px; font-size: 15px; line-height: 1.5">
+<dt style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.9; color: #5B6370">Thesis</dt>
+<dd style="margin: 0; color: #0E1116">A Machine Learning Approach to Detect Zero-Day Ransomware Attacks.</dd>
+<dt style="font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.9; color: #5B6370">Supervisor</dt>
+<dd style="margin: 0; color: #0E1116">Mr.&nbsp;Chamindra&nbsp;Attanayake</dd>
+</dl>
+</article>
+</div>
+</div>
+</section>
+
+<section id="skills" aria-labelledby="skills-title" style="border-top: 1px solid #DADDE3">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 28px 64px">
+<div style="flex: 0 0 240px; max-width: 100%">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #2B3BE6">05</p>
+<h2 id="skills-title" style="margin: 10px 0 0; font-size: clamp(28px, 2.6vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; font-stretch: 104%">Technical skills</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 180px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 32px; color: #5B6370">Hardware &amp; radio</p>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Flipper Zero</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">HackRF One</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">GNU Radio</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">GQRX</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 180px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 32px; color: #5B6370">Protocols</p>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">NFC/RFID</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">EMV</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">ISO/IEC 14443</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">USB</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">USB-C</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 180px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 32px; color: #5B6370">Security tools</p>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Wireshark</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Burp Suite</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Nmap</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Metasploit</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Nessus</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 180px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 32px; color: #5B6370">Digital forensics</p>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Autopsy</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">FTK Imager</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 180px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 32px; color: #5B6370">Programming</p>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Python</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">C</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">C#</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">JavaScript</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">PHP</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">SQL</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<p style="flex: 0 0 180px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 32px; color: #5B6370">Machine learning</p>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">scikit-learn</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">TensorFlow/Keras</span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 24px; padding: 18px 0; border-top: 1px solid #DADDE3; border-bottom: 1px solid #DADDE3">
+<p style="flex: 0 0 180px; margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; line-height: 32px; color: #5B6370">Operating systems</p>
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Linux (Kali, Ubuntu, Arch)</span>
+<span style="display: inline-flex; align-items: center; padding: 5px 11px; border: 1px solid #CDD2D9; background: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; line-height: 1.4; color: #0E1116">Windows</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="service" aria-labelledby="service-title" style="border-top: 1px solid #DADDE3">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(56px, 7vw, 88px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 28px 64px">
+<div style="flex: 0 0 240px; max-width: 100%">
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #2B3BE6">06</p>
+<h2 id="service-title" style="margin: 10px 0 0; font-size: clamp(28px, 2.6vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; font-stretch: 104%">Service &amp; memberships</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<div style="flex: 1 1 380px; min-width: 0">
+<p style="margin: 0; font-size: 17px; line-height: 1.45; font-weight: 600; color: #0E1116">Team Lead, Software Freedom Day 2020</p>
+<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">NSBM Green University</p>
+</div>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; color: #5B6370">2020</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<div style="flex: 1 1 380px; min-width: 0">
+<p style="margin: 0; font-size: 17px; line-height: 1.45; font-weight: 600; color: #0E1116">Volunteer and Senior Member, FOSS Community</p>
+<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">NSBM Green University</p>
+</div>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; color: #5B6370">2019 – 2022</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 24px; padding: 18px 0; border-top: 1px solid #DADDE3">
+<div style="flex: 1 1 380px; min-width: 0">
+<p style="margin: 0; font-size: 17px; line-height: 1.45; font-weight: 600; color: #0E1116">Member, Mozilla Campus Club</p>
+<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">NSBM Green University</p>
+</div>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; color: #5B6370">2019 – 2022</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 24px; padding: 18px 0; border-top: 1px solid #DADDE3; border-bottom: 1px solid #DADDE3">
+<div style="flex: 1 1 380px; min-width: 0">
+<p style="margin: 0; font-size: 17px; line-height: 1.45; font-weight: 600; color: #0E1116">Student Member, IEEE</p>
+<p style="margin: 2px 0 0; font-size: 15px; line-height: 1.5; color: #5B6370">Computer Society; Women in Engineering</p>
+</div>
+<p style="margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; color: #5B6370">2021 – 2022</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer id="contact" class="on-dark" aria-labelledby="contact-title" style="background: #0E1116; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: clamp(72px, 9vw, 120px) clamp(20px, 5vw, 56px) 28px">
+<p style="margin: 0; display: flex; align-items: center; gap: 12px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; color: #A9B0BC">
+<span aria-hidden="true" style="width: 8px; height: 8px; background: #2B3BE6"></span>
+<span>07</span>
+</p>
+<h2 id="contact-title" style="margin: 10px 0 0; font-size: clamp(28px, 2.6vw, 34px); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; font-stretch: 104%">Contact</h2>
+<a class="ul" href="mailto:mewnialahakoon@gmail.com" style="display: inline-block; margin-top: 28px; max-width: 100%; font-size: clamp(24px, 4.2vw, 56px); line-height: 1.15; font-weight: 600; letter-spacing: -0.03em; color: #FFFFFF; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.4); text-decoration-thickness: 2px; text-underline-offset: 10px; overflow-wrap: anywhere">mewnialahakoon@gmail.com</a>
+<p style="margin: 24px 0 0; font-size: 16px; line-height: 1.5; color: #C4CAD3">Colombo, Sri&nbsp;Lanka</p>
+<div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 0 24px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 13px; font-weight: 500">
+<a class="ul" href="https://scholar.google.com/citations?user=hw3FBgYAAAAJ" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #FFFFFF; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.4); text-decoration-thickness: 1px; text-underline-offset: 5px">Google Scholar <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+<a class="ul" href="https://orcid.org/0009-0006-4055-3090" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #FFFFFF; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.4); text-decoration-thickness: 1px; text-underline-offset: 5px">ORCID 0009-0006-4055-3090 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+<a class="ul" href="https://github.com/mewni" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #FFFFFF; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.4); text-decoration-thickness: 1px; text-underline-offset: 5px">GitHub <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+<a class="ul" href="https://www.linkedin.com/in/mewni-a-0a7a48192/" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #FFFFFF; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.4); text-decoration-thickness: 1px; text-underline-offset: 5px">LinkedIn <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5l5-5M4.5 3.5h4v4"></path></svg></a>
+</div>
+<div style="margin-top: clamp(56px, 7vw, 96px); padding-top: 16px; border-top: 1px solid #2A2F38; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 24px; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; font-size: 12px; color: #A9B0BC">
+<span>© 2026 Mewni Alahakoon</span>
+<a href="#top" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #FFFFFF; text-decoration: none">Back to top <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10V2M2.8 5.2 6 2l3.2 3.2"></path></svg></a>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
